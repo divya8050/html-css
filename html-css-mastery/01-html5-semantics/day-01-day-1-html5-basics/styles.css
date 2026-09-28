@@ -1,0 +1,108 @@
+/* Basic resets and variables */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --text-color: #333;
+    --bg-color: #f4f4f4;
+    --light-bg: #ffffff;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+/* Header styling with flexbox */
+.site-header {
+    background-color: var(--primary-color);
+    color: var(--light-bg);
+    padding: 1rem 2rem;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.site-logo {
+    color: var(--light-bg);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Flexbox for nav items */
+    gap: 1.5rem;
+}
+
+.nav-link {
+    color: var(--light-bg);
+    text-decoration: none;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color);
+}
+
+/* Main content styling */
+.main-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.hero-section {
+    background-color: var(--light-bg);
+    padding: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.hero-section h1 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.info-section {
+    background-color: var(--light-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.info-section h2 {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.info-section ul {
+    list-style: inside disc;
+    padding-left: 1rem;
+}
+
+.info-section li {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer styling */
+.site-footer {
+    background-color: var(--text-color);
+    color: var(--light-bg);
+    text-align: center;
+    padding: 1.5rem 2rem;
+    margin-top: 3rem;
+}
