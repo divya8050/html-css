@@ -1,0 +1,60 @@
+/* Basic reset and typography */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Light background */
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #333; /* Dark background */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Main content area */
+main {
+    padding: 20px;
+    max-width: 960px; /* Constrain width for readability */
+    margin: 20px auto; /* Center the main content */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px; /* Slightly rounded corners */
+}
+
+/* Section headings */
+h2, h3 {
+    color: #007bff; /* A primary blue color */
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+/* List styles */
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
