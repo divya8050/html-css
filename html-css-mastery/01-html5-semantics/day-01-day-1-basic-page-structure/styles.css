@@ -1,0 +1,83 @@
+/* Basic resets and global styles */
+:root {
+    --primary-bg: #283747;
+    --secondary-bg: #f4f4f4;
+    --text-color: #ecf0f1;
+    --dark-text-color: #333;
+    --accent-color: #3498db;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: var(--secondary-bg);
+    color: var(--dark-text-color);
+}
+
+/* Header styles */
+.main-header {
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.main-header h1 {
+    font-size: 1.8rem;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.main-nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: var(--accent-color);
+}
+
+/* Main content styles */
+.main-content {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+section, article {
+    background-color: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+section h2, article h3 {
+    color: var(--primary-bg);
+    margin-bottom: 1rem;
+}
+
+/* Footer styles */
+.main-footer {
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
