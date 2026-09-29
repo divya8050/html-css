@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 2: Basic Page Structure</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header section for site title and navigation -->
+  <header class="site-header">
+    <div class="container">
+      <h1>My Learning Journal</h1>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main content area -->
+  <main class="main-content">
+    <div class="container">
+      <section class="intro-section">
+        <h2>Welcome to Day 2!</h2>
+        <p>Today, we're building a foundational web page using semantic HTML5 elements and applying initial CSS3 styles. This helps structure our content logically and prepare for more advanced layouts.</p>
+      </section>
+
+      <article class="blog-post">
+        <h3>Understanding Semantic HTML</h3>
+        <p>Semantic HTML means using HTML tags that accurately describe the purpose of the content they contain. For example, using <code>&lt;header&gt;</code> for introductory content, <code>&lt;nav&gt;</code> for navigation links, <code>&lt;main&gt;</code> for the dominant content, <code>&lt;section&gt;</code> for thematic grouping, <code>&lt;article&gt;</code> for independent content, and <code>&lt;footer&gt;</code> for concluding information.</p>
+        <p>This not only makes our code cleaner and easier to read for other developers, but it also improves accessibility for screen readers and helps search engines understand the content better.</p>
+      </article>
+
+      <section class="features-section">
+        <h3>Why Modern CSS?</h3>
+        <ul>
+          <li><strong>Flexbox:</strong> For efficient one-dimensional layouts (rows or columns).</li>
+          <li><strong>CSS Variables:</strong> For managing consistent styles across the site easily.</li>
+          <li><strong>Clean Class Names:</strong> Using BEM or natural kebab-case for maintainability.</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer section for copyright and other info -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 My Learning Journey. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
