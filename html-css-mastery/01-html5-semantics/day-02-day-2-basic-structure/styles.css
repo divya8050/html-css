@@ -1,0 +1,110 @@
+/* Basic reset for consistent styling */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Define CSS variables for easy theming */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --text-color: #333;
+  --light-text-color: #f8f8f8;
+  --background-color: #f4f7f6;
+  --card-background: #ffffff;
+  --border-radius: 8px;
+  --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+/* Utility container for centering content */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem; /* Add horizontal padding for smaller screens */
+}
+
+/* Header styles */
+.site-header {
+  background-color: var(--primary-color);
+  color: var(--light-text-color);
+  padding: 1rem 0;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between; /* Space out title and nav */
+  align-items: center;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+/* Navigation styles using Flexbox */
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1.5rem; /* Space between nav items */
+}
+
+.main-nav a {
+  color: var(--light-text-color);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+.main-nav a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Main content area styles */
+.main-content {
+  padding: 2rem 0;
+}
+
+.intro-section,
+.blog-post,
+.features-section {
+  background-color: var(--card-background);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.intro-section h2,
+.blog-post h3,
+.features-section h3 {
+  color: var(--primary-color);
+  margin-top: 0;
+}
+
+.features-section ul {
+  list-style: disc inside;
+  padding-left: 0;
+}
+
+.features-section li {
+  margin-bottom: 0.5rem;
+}
+
+/* Footer styles */
+.site-footer {
+  background-color: var(--text-color);
+  color: var(--light-text-color);
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+}
