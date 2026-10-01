@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4: Semantic Structure</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Page header with navigation -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="site-title">My Semantic Site</h1>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content area -->
+    <main class="main-content container">
+        <!-- Primary content section -->
+        <section class="primary-section">
+            <article class="blog-post">
+                <h2 class="post-title">Article Title One</h2>
+                <p class="post-meta">Published on <time datetime="2026-10-01">October 1, 2026</time> by John Doe</p>
+                <p>This is the first paragraph of a semantic article. It contains important information about the topic at hand. We are learning about HTML5 semantic elements today.</p>
+                <p>Using elements like <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code> helps search engines and assistive technologies understand the structure and meaning of your content.</p>
+            </article>
+
+            <article class="blog-post">
+                <h2 class="post-title">Article Title Two</h2>
+                <p class="post-meta">Published on <time datetime="2026-10-01">October 1, 2026</time> by Jane Smith</p>
+                <p>Here's another example of an article within our main content section. Semantic HTML is crucial for accessibility and SEO.</p>
+            </article>
+        </section>
+
+        <!-- Supplementary content / sidebar -->
+        <aside class="sidebar-aside">
+            <h3 class="aside-title">Related Topics</h3>
+            <ul class="related-list">
+                <li><a href="#">What is HTML5?</a></li>
+                <li><a href="#">CSS3 Basics</a></li>
+                <li><a href="#">Web Accessibility Guide</a></li>
+            </ul>
+            <h3 class="aside-title">Advertisements</h3>
+            <p>Buy our awesome product today!</p>
+        </aside>
+    </main>
+
+    <!-- Page footer -->
+    <footer class="page-footer">
+        <div class="container">
+            <p>&copy; <time datetime="2026">2026</time> My Semantic Site. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
