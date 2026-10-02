@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 5: Semantic Page Layout</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="main-header">
+    <h1 class="site-title">My Learning Journey</h1>
+    <nav class="main-nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <article class="blog-post">
+      <h2 class="post-title">Understanding Semantic HTML5</h2>
+      <p class="post-meta">Published on <time datetime="2026-10-02">October 2, 2026</time> by A Web Dev Student</p>
+      <section class="post-section">
+        <h3>What is Semantic HTML?</h3>
+        <p>Semantic HTML introduces meaning to the web content by using elements that clearly describe their purpose. Instead of relying solely on generic <code>&lt;div&gt;</code> tags, we use elements like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code>.</p>
+      </section>
+      <section class="post-section">
+        <h3>Benefits of Semantic Markup</h3>
+        <ul class="benefit-list">
+          <li>Improved accessibility for screen readers.</li>
+          <li>Better SEO (Search Engine Optimization).</li>
+          <li>Clearer code structure for developers.</li>
+          <li>Easier maintenance and styling.</li>
+        </ul>
+      </section>
+    </article>
+
+    <aside class="sidebar">
+      <h3 class="sidebar-title">Recent Topics</h3>
+      <ul class="sidebar-list">
+        <li class="sidebar-item"><a href="#" class="sidebar-link">CSS Box Model</a></li>
+        <li class="sidebar-item"><a href="#" class="sidebar-link">Flexbox Basics</a></li>
+        <li class="sidebar-item"><a href="#" class="sidebar-link">HTML Forms</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer class="main-footer">
+    <p>&copy; 2026 Day 5 Learning. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
