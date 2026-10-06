@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 9: Semantic Page Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="page-header">
+        <h1>My Awesome Blog</h1>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-main">
+        <article class="main-article">
+            <h2>Understanding Semantic HTML5</h2>
+            <p>Semantic HTML5 elements provide meaning to the web content. They help search engines and assistive technologies understand the structure and purpose of different parts of a webpage, leading to better accessibility and SEO.</p>
+            <p>For instance, using <code>&lt;header&gt;</code> for introductory content, <code>&lt;nav&gt;</code> for navigation links, <code>&lt;main&gt;</code> for the dominant content, <code>&lt;article&gt;</code> for self-contained content, and <code>&lt;footer&gt;</code> for concluding information makes your markup more meaningful.</p>
+            <h3>Key Semantic Elements:</h3>
+            <ul>
+                <li><code>&lt;header&gt;</code>: Introduction to a document or section.</li>
+                <li><code>&lt;nav&gt;</code>: Navigation links.</li>
+                <li><code>&lt;main&gt;</code>: Dominant content of the <code>&lt;body&gt;</code>.</li>
+                <li><code>&lt;article&gt;</code>: Independent, self-contained content.</li>
+                <li><code>&lt;aside&gt;</code>: Content related to the main content, but separate.</li>
+                <li><code>&lt;footer&gt;</code>: Concluding content for a document or section.</li>
+            </ul>
+        </article>
+
+        <aside class="sidebar">
+            <h3>Recent Posts</h3>
+            <ul>
+                <li><a href="#">CSS Flexbox Mastery</a></li>
+                <li><a href="#">Grid Layout Basics</a></li>
+                <li><a href="#">Responsive Design Tips</a></li>
+            </ul>
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer class="page-footer">
+        <p>&copy; 2026 My Awesome Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>
