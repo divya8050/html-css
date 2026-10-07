@@ -6,6 +6,7 @@ Personal repository for HTML5 semantics, modern CSS layout techniques, responsiv
 
 | Date | Topic / Problem | Language | Difficulty | Link |
 | :--- | :--- | :--- | :--- | :--- |
+| 2026-10-07 | [Flexbox Layout Basics](html-css-mastery/02-flexbox-grid/day-10-flexbox-layout-basics/index.html) | `HTML & CSS` | `Beginner` | [Commit](https://github.com/divya8050/html-css/commit/c1eb012d8542bfa9e6f83cf0de21d81fffc96201) |
 | 2026-10-06 | [semantic page layout with flexbox](html-css-mastery/01-html5-semantics/day-09-semantic-page-layout-flexbox/index.html) | `HTML & CSS` | `Beginner` | [Commit](https://github.com/divya8050/html-css/commit/9fd29367094f8be84a815c479f8c47e2a449019a) |
 | 2026-10-05 | [semantic layout with flexbox](html-css-mastery/02-flexbox-grid/day-08-semantic-layout-flexbox/index.html) | `HTML & CSS` | `Beginner` | [Commit](https://github.com/divya8050/html-css/commit/2c37773067445c83f296e3944ffa8bd3b9460969) |
 | 2026-10-04 | [Semantic HTML5 Structure](html-css-mastery/01-html5-semantics/day-07-semantic-html5-structure/index.html) | `HTML & CSS` | `Beginner` | [Commit](https://github.com/divya8050/html-css/commit/204342bad1e544eb8a61c55b9f5a82cefac04e3f) |
