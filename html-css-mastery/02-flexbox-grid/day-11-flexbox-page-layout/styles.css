@@ -1,0 +1,144 @@
+/* CSS variables for colors */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --text-color: #333;
+    --light-bg: #f4f4f4;
+    --dark-bg: #2c3e50;
+    --border-color: #ddd;
+}
+
+/* Basic reset and box-sizing */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--light-bg);
+    min-height: 100vh; /* Ensure body takes full viewport height */
+    display: flex; /* Make body a flex container */
+    flex-direction: column; /* Stack children vertically */
+}
+
+.page-header {
+    background-color: var(--dark-bg);
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex; /* Flex container for header content */
+    justify-content: space-between; /* Space out title and nav */
+    align-items: center; /* Vertically align items */
+}
+
+.page-header h1 {
+    margin: 0;
+}
+
+.page-header nav ul {
+    list-style: none;
+    display: flex; /* Flex container for nav links */
+    gap: 1.5rem; /* Space between links */
+}
+
+.page-header nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+}
+
+.page-header nav a:hover {
+    color: var(--primary-color);
+}
+
+.main-content-area {
+    display: flex; /* Main flex container for content and sidebar */
+    flex: 1; /* Allow this area to grow and take available space */
+    padding: 1.5rem 2rem;
+    gap: 2rem; /* Space between main and sidebar */
+}
+
+.main-section {
+    flex: 3; /* Main section takes 3 parts of available space */
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content-article {
+    margin-bottom: 1.5rem;
+}
+
+.content-article h2, .content-article h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.8rem;
+}
+
+.sidebar {
+    flex: 1; /* Sidebar takes 1 part of available space */
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.sidebar ul li {
+    margin-bottom: 0.5rem;
+}
+
+.sidebar ul a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sidebar ul a:hover {
+    color: var(--primary-color);
+}
+
+.page-footer {
+    background-color: var(--dark-bg);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 2rem;
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .page-header {
+        flex-direction: column; /* Stack header items on smaller screens */
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .page-header nav ul {
+        flex-direction: column; /* Stack nav links vertically */
+        gap: 0.5rem;
+    }
+
+    .main-content-area {
+        flex-direction: column; /* Stack main content and sidebar vertically */
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+
+    .main-section, .sidebar {
+        flex: auto; /* Allow them to take full width */
+    }
+}
