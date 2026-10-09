@@ -1,0 +1,66 @@
+/* General styles */
+:root {
+    --primary-bg: #e0f2f7; /* Light blue background */
+    --item-bg-1: #a7d9f7; /* Medium blue */
+    --item-bg-2: #84c9f7; /* Slightly darker blue */
+    --item-bg-3: #5bbff7; /* Darker blue */
+    --text-color: #333;
+    --border-color: #007bff;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex; /* Use flexbox for the entire body to center the container */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+}
+
+/* Flex container styles */
+.flex-container {
+    display: flex; /* Makes this a flex container */
+    flex-direction: row; /* Default, but explicit for clarity */
+    justify-content: space-around; /* Distribute items evenly with space around them */
+    align-items: flex-start; /* Align items to the start of the cross axis */
+    width: 80%; /* Container width */
+    max-width: 900px;
+    min-height: 300px; /* To clearly demonstrate align-items */
+    border: 2px solid var(--border-color);
+    padding: 20px;
+    gap: 15px; /* Space between items */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Flex item styles */
+.flex-item {
+    padding: 25px 35px;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    flex-grow: 0; /* Items won't grow */
+    flex-shrink: 1; /* Items can shrink */
+    flex-basis: auto; /* Default basis */
+}
+
+.item-1 {
+    background-color: var(--item-bg-1);
+    /* Individual alignment override */
+    align-self: flex-end; /* Align this item to the end of the cross axis */
+}
+
+.item-2 {
+    background-color: var(--item-bg-2);
+}
+
+.item-3 {
+    background-color: var(--item-bg-3);
+    /* Individual alignment override */
+    align-self: center; /* Align this item to the center of the cross axis */
+}
