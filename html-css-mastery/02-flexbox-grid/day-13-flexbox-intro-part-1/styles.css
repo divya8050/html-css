@@ -1,0 +1,111 @@
+/* General styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #f8f9fa;
+  color: #343a40;
+  line-height: 1.6;
+}
+
+.page-header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 1.5rem 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.page-header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 2.5rem;
+}
+
+.page-header p {
+  margin: 0;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.main-content {
+  max-width: 1000px;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
+}
+
+.flex-container-section {
+  background-color: #ffffff;
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+h2, h3 {
+  color: #0056b3;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 0.5rem;
+}
+
+/* Flexbox styles */
+.flex-container {
+  display: flex; /* Makes the container a flex container */
+  background-color: #e9f0f9;
+  border: 1px solid #cce0f0;
+  padding: 20px;
+  margin-top: 20px;
+  min-height: 120px; /* For better visualization of align-items */
+  gap: 15px; /* Space between flex items */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  border-radius: 8px;
+}
+
+.flex-item {
+  background-color: #28a745;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.1rem;
+  flex-shrink: 0; /* Prevent items from shrinking by default */
+}
+
+.large-height {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Justify Content examples */
+.justify-space-between {
+  justify-content: space-between;
+  align-items: flex-start; /* Reset for this example */
+}
+
+.justify-center {
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.justify-flex-end {
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+/* Align Items examples */
+.align-center {
+  align-items: center; /* Aligns items vertically in the center */
+}
+
+.page-footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  background-color: #343a40;
+  color: #e9ecef;
+  margin-top: 3rem;
+  font-size: 0.95rem;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
