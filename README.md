@@ -6,6 +6,7 @@ Personal repository for HTML5 semantics, modern CSS layout techniques, responsiv
 
 | Date | Topic / Problem | Language | Difficulty | Link |
 | :--- | :--- | :--- | :--- | :--- |
+| 2026-10-10 | [Introduction to Flexbox - Part 1](html-css-mastery/02-flexbox-grid/day-13-flexbox-intro-part-1/index.html) | `HTML & CSS` | `Beginner` | [Commit](https://github.com/divya8050/html-css/commit/93ee39233efc74a1a63664559b06cb5433821cc1) |
 | 2026-10-09 | [Flexbox Basics: Aligning Items](html-css-mastery/02-flexbox-grid/day-12-flexbox-basics-aligning-items/index.html) | `HTML & CSS` | `Beginner` | [Commit](https://github.com/divya8050/html-css/commit/1c5dcad7ced44d40e2549520cfe6220d7c1472a0) |
 | 2026-10-08 | [Flexbox Page Layout](html-css-mastery/02-flexbox-grid/day-11-flexbox-page-layout/index.html) | `HTML & CSS` | `Beginner` | [Commit](https://github.com/divya8050/html-css/commit/3715ea2fee7e95d06f615ea36f3621f3d541abd5) |
 | 2026-10-07 | [Flexbox Layout Basics](html-css-mastery/02-flexbox-grid/day-10-flexbox-layout-basics/index.html) | `HTML & CSS` | `Beginner` | [Commit](https://github.com/divya8050/html-css/commit/c1eb012d8542bfa9e6f83cf0de21d81fffc96201) |
