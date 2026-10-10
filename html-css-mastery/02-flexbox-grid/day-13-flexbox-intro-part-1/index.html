@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 13: Flexbox Introduction</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="page-header">
+    <h1>Day 13: Flexbox Basics</h1>
+    <p>Understanding the fundamental concepts of Flexbox.</p>
+  </header>
+
+  <main class="main-content">
+    <section class="flex-container-section">
+      <h2>Basic Flex Container</h2>
+      <!-- A simple flex container demonstrating default behavior -->
+      <div class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+        <div class="flex-item">Item 4</div>
+      </div>
+    </section>
+
+    <section class="flex-container-section">
+      <h2>Justify Content Examples</h2>
+      <h3><code>justify-content: space-between;</code></h3>
+      <!-- Items distributed with space between them -->
+      <div class="flex-container justify-space-between">
+        <div class="flex-item">Item A</div>
+        <div class="flex-item">Item B</div>
+        <div class="flex-item">Item C</div>
+      </div>
+
+      <h3><code>justify-content: center;</code></h3>
+      <!-- Items centered horizontally -->
+      <div class="flex-container justify-center">
+        <div class="flex-item">Item D</div>
+        <div class="flex-item">Item E</div>
+      </div>
+
+      <h3><code>justify-content: flex-end;</code></h3>
+      <!-- Items aligned to the end of the main axis -->
+      <div class="flex-container justify-flex-end">
+        <div class="flex-item">Item F</div>
+        <div class="flex-item">Item G</div>
+      </div>
+    </section>
+
+    <section class="flex-container-section">
+      <h2>Align Items Examples</h2>
+      <h3><code>align-items: center;</code></h3>
+      <!-- Items centered vertically -->
+      <div class="flex-container align-center">
+        <div class="flex-item">Short</div>
+        <div class="flex-item large-height">Tall Item</div>
+        <div class="flex-item">Medium</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <p>&copy; 2026 Frontend Journey. Day 13 of 180.</p>
+  </footer>
+</body>
+</html>
