@@ -1,0 +1,168 @@
+/* Define custom properties for colors and spacing */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --text-color: #333;
+    --bg-color: #f4f4f4;
+    --border-color: #ddd;
+    --spacing-md: 1.5rem;
+    --spacing-sm: 1rem;
+    --header-height: 80px;
+    --footer-height: 60px;
+}
+
+/* Basic reset and typography */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Page container using CSS Grid */
+.page-container {
+    display: grid;
+    /* Define grid areas for a typical page layout */
+    grid-template-areas:
+        "header header header"
+        "nav main sidebar"
+        "footer footer footer";
+    /* Define column widths and row heights */
+    grid-template-columns: 1fr 4fr 1.5fr; /* Nav | Main Content | Sidebar */
+    grid-template-rows: var(--header-height) 1fr var(--footer-height); /* Header | Content | Footer */
+    min-height: 100vh;
+    gap: var(--spacing-sm); /* Gap between grid items */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-sm);
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.site-header {
+    grid-area: header;
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--spacing-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.main-nav {
+    grid-area: nav;
+    background-color: #ecf0f1;
+    padding: var(--spacing-md);
+    border-right: 1px solid var(--border-color);
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav li {
+    margin-bottom: 0.75rem;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    display: block;
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.main-nav a:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.main-content {
+    grid-area: main;
+    background-color: white;
+    padding: var(--spacing-md);
+    border-radius: 5px;
+}
+
+.main-content h2, .main-content h3 {
+    color: var(--primary-color);
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #ecf0f1;
+    padding: var(--spacing-md);
+    border-left: 1px solid var(--border-color);
+}
+
+.sidebar h3 {
+    color: var(--text-color);
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.site-footer {
+    grid-area: footer;
+    background-color: var(--text-color);
+    color: white;
+    padding: var(--spacing-sm);
+    text-align: center;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .page-container {
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "sidebar"
+            "footer";
+        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-rows: auto auto 1fr auto auto; /* Adjust row heights */
+        gap: var(--spacing-sm);
+    }
+
+    .main-nav {
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .main-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .main-nav li {
+        margin-bottom: 0;
+    }
+
+    .sidebar {
+        border-left: none;
+        border-top: 1px solid var(--border-color);
+    }
+}
