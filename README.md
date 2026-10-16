@@ -6,6 +6,7 @@ Personal repository for HTML5 semantics, modern CSS layout techniques, responsiv
 
 | Date | Topic / Problem | Language | Difficulty | Link |
 | :--- | :--- | :--- | :--- | :--- |
+| 2026-10-16 | [Building a Responsive Feature Card Layout with Flexbox](html-css-mastery/02-flexbox-grid/day-19-flexbox-feature-cards/index.html) | `HTML & CSS` | `Beginner` | [Commit](https://github.com/divya8050/html-css/commit/0fe5d249f1c28bf54313de4639401449075e65e7) |
 | 2026-10-15 | [Flexbox - Alignment and Justification](html-css-mastery/02-flexbox-grid/day-18-flexbox-alignment-justification/index.html) | `HTML & CSS` | `Beginner` | [Commit](https://github.com/divya8050/html-css/commit/cf50b9e46f60dadab8efa3aef6e18930152fff80) |
 | 2026-10-14 | [Semantic Page Layout with Flexbox](html-css-mastery/02-flexbox-grid/day-17-semantic-page-layout-flexbox/index.html) | `HTML & CSS` | `Beginner` | [Commit](https://github.com/divya8050/html-css/commit/8ea88de968f42d16b077feeaa4193d4e9f1549e6) |
 | 2026-10-13 | [Building a simple navigation with Flexbox](html-css-mastery/02-flexbox-grid/day-16-simple-flexbox-navigation/index.html) | `HTML & CSS` | `Beginner` | [Commit](https://github.com/divya8050/html-css/commit/cc7ee37d17a0b40b36420fc42028012325893cb1) |
