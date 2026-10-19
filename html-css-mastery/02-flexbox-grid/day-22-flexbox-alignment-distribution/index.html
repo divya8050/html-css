@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Alignment & Distribution</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="page-header">
+        <h1>Flexbox Alignment & Distribution</h1>
+    </header>
+
+    <main class="main-content">
+        <!-- Example 1: justify-content -->
+        <section class="flex-section">
+            <h2>Justify Content (Main Axis)</h2>
+            <p>Controls alignment of items along the main axis.</p>
+            <div class="flex-container justify-start">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <div class="flex-container justify-center">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <div class="flex-container justify-end">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <div class="flex-container justify-space-between">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <div class="flex-container justify-space-around">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+            <div class="flex-container justify-space-evenly">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+        </section>
+
+        <!-- Example 2: align-items -->
+        <section class="flex-section">
+            <h2>Align Items (Cross Axis)</h2>
+            <p>Controls alignment of items along the cross axis within each line.</p>
+            <div class="flex-container align-start">
+                <div class="flex-item small">1</div>
+                <div class="flex-item medium">2</div>
+                <div class="flex-item large">3</div>
+            </div>
+            <div class="flex-container align-center">
+                <div class="flex-item small">1</div>
+                <div class="flex-item medium">2</div>
+                <div class="flex-item large">3</div>
+            </div>
+            <div class="flex-container align-end">
+                <div class="flex-item small">1</div>
+                <div class="flex-item medium">2</div>
+                <div class="flex-item large">3</div>
+            </div>
+            <div class="flex-container align-stretch">
+                <div class="flex-item small">1</div>
+                <div class="flex-item medium">2</div>
+                <div class="flex-item large">3</div>
+            </div>
+            <div class="flex-container align-baseline">
+                <div class="flex-item small-text">one</div>
+                <div class="flex-item medium-text">two</div>
+                <div class="flex-item large-text">three</div>
+            </div>
+        </section>
+
+        <!-- Example 3: align-self -->
+        <section class="flex-section">
+            <h2>Align Self</h2>
+            <p>Overrides the container's <code>align-items</code> for individual flex items.</p>
+            <div class="flex-container align-default">
+                <div class="flex-item small">1</div>
+                <div class="flex-item medium align-self-center">2</div>
+                <div class="flex-item large align-self-end">3</div>
+            </div>
+        </section>
+
+        <!-- Example 4: gap -->
+        <section class="flex-section">
+            <h2>Flex Gap</h2>
+            <p>Adds space between flex items without affecting outer edges.</p>
+            <div class="flex-container with-gap">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+                <div class="flex-item">4</div>
+                <div class="flex-item">5</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <p>&copy; 2026 Day 22 - Flexbox Practice</p>
+    </footer>
+</body>
+</html>
