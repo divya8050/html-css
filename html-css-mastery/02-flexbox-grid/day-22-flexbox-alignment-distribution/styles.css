@@ -1,0 +1,135 @@
+/* Basic reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    display: flex; /* Use flexbox for overall page layout */
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page-header {
+    background-color: #007bff; /* Primary blue */
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.page-header h1 {
+    margin: 0;
+}
+
+.main-content {
+    flex-grow: 1;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Spacing between sections */
+}
+
+.flex-section {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.flex-section h2 {
+    margin-bottom: 0.5rem;
+    color: #0056b3; /* Darker blue */
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.flex-section p {
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* Flex Container Base Styles */
+.flex-container {
+    display: flex;
+    background-color: #e9ecef; /* Light grey background */
+    border: 2px dashed #adb5bd; /* Dashed border for visualization */
+    min-height: 120px; /* To better visualize align-items */
+    margin-bottom: 1rem; /* Space between different flex container examples */
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+/* Flex Item Base Styles */
+.flex-item {
+    background-color: #6c757d; /* Dark grey item background */
+    color: white;
+    padding: 1rem;
+    width: 60px; /* Fixed width for consistency */
+    height: 60px; /* Fixed height for consistency */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    margin: 0.25rem; /* Default margin for visual separation if gap not used */
+}
+
+/* justify-content examples */
+.justify-start { justify-content: flex-start; }
+.justify-center { justify-content: center; }
+.justify-end { justify-content: flex-end; }
+.justify-space-between { justify-content: space-between; }
+.justify-space-around { justify-content: space-around; }
+.justify-space-evenly { justify-content: space-evenly; }
+
+/* align-items examples */
+.align-start { align-items: flex-start; }
+.align-center { align-items: center; }
+.align-end { align-items: flex-end; }
+.align-stretch { align-items: stretch; } /* Items need to have height: auto or not set */
+.align-baseline { align-items: baseline; }
+
+/* Item sizes for align-items demonstration */
+.flex-item.small { height: 40px; }
+.flex-item.medium { height: 70px; }
+.flex-item.large { height: 100px; }
+
+/* Text sizes for align-baseline demonstration */
+.flex-item.small-text { font-size: 1rem; height: auto; padding: 0.5rem 1rem; }
+.flex-item.medium-text { font-size: 1.5rem; height: auto; padding: 0.75rem 1rem; }
+.flex-item.large-text { font-size: 2rem; height: auto; padding: 1rem 1rem; }
+
+/* align-self example */
+.align-default { align-items: flex-start; } /* Default for this container */
+.align-self-center { align-self: center; }
+.align-self-end { align-self: flex-end; }
+
+/* gap example */
+.flex-container.with-gap {
+    gap: 1rem; /* Modern way to add space between flex items */
+    margin-bottom: 0;
+}
+.flex-container.with-gap .flex-item {
+    margin: 0; /* Clear individual item margins when gap is used */
+}
+
+.page-footer {
+    background-color: #343a40; /* Darker grey for footer */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto; /* Pushes footer to the bottom */
+    font-size: 0.9rem;
+}
