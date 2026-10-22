@@ -1,0 +1,127 @@
+/* Basic resets */
+:root {
+    --primary-color: #007bff;
+    --text-color: #333;
+    --background-color: #f4f7f6;
+    --card-background: #ffffff;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+    --border-radius: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.page-header {
+    text-align: center;
+    padding: var(--spacing-lg) 0;
+    background-color: var(--card-background);
+    margin-bottom: var(--spacing-lg);
+    box-shadow: 0 2px 4px var(--card-shadow);
+}
+
+.page-header h1 {
+    margin: 0;
+    color: var(--primary-color);
+}
+
+/* Card Container - Flexbox */
+.card-container {
+    display: flex; /* Enable Flexbox */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center cards horizontally */
+    gap: var(--spacing-lg); /* Space between cards */
+    max-width: 1200px; /* Max width for the container */
+    margin: 0 auto; /* Center the container */
+    padding: var(--spacing-lg);
+}
+
+/* Individual Card Styles */
+.product-card {
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px var(--card-shadow);
+    overflow: hidden; /* Ensures image corners are rounded */
+    display: flex; /* Make card content a flex container */
+    flex-direction: column; /* Stack image and content vertically */
+    flex-basis: 300px; /* Default width for cards */
+    flex-grow: 1; /* Allow cards to grow */
+    max-width: 350px; /* Max width for a single card */
+    transition: transform 0.2s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card__image {
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Cover the area, crop if necessary */
+}
+
+.product-card__content {
+    padding: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Allow content to grow and push button to bottom */
+}
+
+.product-card__title {
+    margin-top: 0;
+    color: var(--primary-color);
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.product-card__description {
+    font-size: 0.95em;
+    color: #555;
+    flex-grow: 1; /* Allow description to take available space */
+    margin-bottom: var(--spacing-md);
+}
+
+.product-card__button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    align-self: flex-start; /* Align button to the start of the cross-axis */
+    transition: background-color 0.2s ease;
+}
+
+.product-card__button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card-container {
+        padding: var(--spacing-md);
+        gap: var(--spacing-md);
+    }
+
+    .product-card {
+        flex-basis: calc(50% - var(--spacing-md)); /* Two cards per row on medium screens */
+        max-width: none; /* Remove max-width for better responsiveness */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-card {
+        flex-basis: 100%; /* One card per row on small screens */
+    }
+    .page-header h1 {
+        font-size: 1.8em;
+    }
+}
