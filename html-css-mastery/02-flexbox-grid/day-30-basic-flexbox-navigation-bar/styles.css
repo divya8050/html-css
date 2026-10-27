@@ -1,0 +1,81 @@
+/* Basic reset and variables */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --text-light: #ecf0f1;
+    --text-dark: #34495e;
+    --bg-light: #ffffff;
+    --bg-dark: #2980b9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+}
+
+/* Main header styling with Flexbox */
+.main-header {
+    background-color: var(--secondary-color);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between; /* Pushes logo to one end, nav to the other */
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Brand logo styling */
+.brand-logo .logo-link {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Navigation list styling with Flexbox */
+.nav-list {
+    list-style: none;
+    display: flex; /* Arrange list items horizontally */
+    gap: 1.5rem; /* Space between navigation items */
+}
+
+/* Navigation link styling */
+.nav-link {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--primary-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+/* Hero section for content */
+.hero-section {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+}
