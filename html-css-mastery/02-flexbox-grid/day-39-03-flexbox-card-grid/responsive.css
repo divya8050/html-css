@@ -1,0 +1,6 @@
+/* Responsive styles for flexbox card grid */
+@media (max-width: 768px) {
+  body {
+    padding: 12px;
+  }
+}
