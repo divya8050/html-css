@@ -6,6 +6,7 @@ Personal repository for HTML5 semantics, modern CSS layout techniques, responsiv
 
 | Date | Topic / Problem | Language | Difficulty | Link |
 | :--- | :--- | :--- | :--- | :--- |
+| 2026-11-06 | [Card Grid Layout with CSS Grid](html-css-mastery/02-flexbox-grid/day-40-card-grid-layout-css-grid/index.html) | `HTML & CSS` | `Beginner` | [Commit](https://github.com/divya8050/html-css/commit/fcc44287995d2197d73fb82f50cf6ddecf94fa1d) |
 | 2026-11-05 | [Responsive Flexbox Card Components (HTML Markup)](html-css-mastery/02-flexbox-grid/day-39-03-flexbox-card-grid/index.html) | `HTML & CSS` | `Beginner` | [Commit](https://github.com/divya8050/html-css/commit/b6ccbdb39a91d911f6b082288a4bfef74ef972e0) |
 | 2026-10-27 | [Basic Flexbox Navigation Bar](html-css-mastery/02-flexbox-grid/day-30-basic-flexbox-navigation-bar/index.html) | `HTML & CSS` | `Beginner` | [Commit](https://github.com/divya8050/html-css/commit/ca7b847571642bb1e1e1de5b389cccb4909843dd) |
 | 2026-10-26 | [Hero Section with Call to Action](html-css-mastery/02-flexbox-grid/day-29-hero-section-cta/index.html) | `HTML & CSS` | `Beginner` | [Commit](https://github.com/divya8050/html-css/commit/e27c01a25362c972f15d6875e55bf6cbbab09bf8) |
