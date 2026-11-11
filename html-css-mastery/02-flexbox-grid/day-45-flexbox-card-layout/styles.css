@@ -1,0 +1,120 @@
+/* Basic reset and variables */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: #f8f9fa;
+    --text-color: #343a40;
+    --card-background: #ffffff;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+    --border-radius: 8px;
+    --spacing-md: 1.5rem;
+    --spacing-sm: 1rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    padding: var(--spacing-md);
+}
+
+.main-header {
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+    padding: var(--spacing-sm);
+}
+
+.main-header h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto; /* Center the main content */
+}
+
+.card-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    gap: var(--spacing-md); /* Space between cards */
+    justify-content: center; /* Center cards horizontally */
+}
+
+.product-card {
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px var(--card-shadow);
+    overflow: hidden; /* Ensures image corners are rounded */
+    display: flex; /* Flex container for card content */
+    flex-direction: column; /* Stack image and content vertically */
+    width: 100%; /* Default to full width on small screens */
+    max-width: 350px; /* Max width for individual cards */
+    transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card__image {
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Cover the area, maintaining aspect ratio */
+    display: block; /* Remove extra space below image */
+}
+
+.product-card__content {
+    padding: var(--spacing-sm) var(--spacing-md);
+    flex-grow: 1; /* Allow content to take available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Push button to bottom if content varies */
+}
+
+.product-card__title {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.product-card__description {
+    font-size: 1rem;
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-sm);
+    flex-grow: 1; /* Allow description to take space */
+}
+
+.product-card__button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.2s ease-in-out;
+    align-self: flex-start; /* Align button to start (left) */
+}
+
+.product-card__button:hover {
+    background-color: #0056b3; /* A darker shade of primary-color */
+}
+
+/* Responsive adjustments for larger screens */
+@media (min-width: 768px) {
+    .card-grid {
+        justify-content: flex-start; /* Align cards to the start on larger screens */
+    }
+}
