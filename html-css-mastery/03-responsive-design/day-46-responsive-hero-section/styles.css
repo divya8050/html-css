@@ -1,0 +1,117 @@
+/* Basic reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --text-color-dark: #343a40;
+    --text-color-light: #f8f9fa;
+    --bg-color-light: #ffffff;
+    --bg-color-dark: #e9ecef;
+    --font-family-sans: 'Arial', sans-serif;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --border-radius: 0.5rem;
+}
+
+body {
+    font-family: var(--font-family-sans);
+    line-height: 1.6;
+    color: var(--text-color-dark);
+    background-color: var(--bg-color-light);
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column; /* Stack on small screens */
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    padding: var(--spacing-lg) var(--spacing-md);
+    background-color: var(--bg-color-dark);
+    text-align: center;
+    gap: var(--spacing-md); /* Space between content and image */
+}
+
+.hero-content {
+    max-width: 600px;
+    padding: var(--spacing-sm);
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    color: var(--text-color-dark);
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.2;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    padding: 0.8rem 1.8rem;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    filter: brightness(0.9); /* Darken on hover */
+}
+
+.hero-image-container {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .hero-section {
+        flex-direction: row; /* Side-by-side on larger screens */
+        text-align: left;
+        padding: var(--spacing-lg);
+        gap: var(--spacing-lg);
+    }
+
+    .hero-content {
+        flex: 1;
+        padding: 0;
+    }
+
+    .hero-image-container {
+        flex: 1;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-section {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
