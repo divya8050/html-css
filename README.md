@@ -6,6 +6,7 @@ Personal repository for HTML5 semantics, modern CSS layout techniques, responsiv
 
 | Date | Topic / Problem | Language | Difficulty | Link |
 | :--- | :--- | :--- | :--- | :--- |
+| 2026-11-14 | [Responsive Multi-Column Layout with CSS Grid](html-css-mastery/02-flexbox-grid/day-48-responsive-multi-column-grid-layout/index.html) | `HTML & CSS` | `Beginner` | [Commit](https://github.com/divya8050/html-css/commit/62ef2eb141eefe47e51cc0738aebadf6c5dc7894) |
 | 2026-11-13 | [Advanced Flexbox Layouts](html-css-mastery/02-flexbox-grid/day-47-advanced-flexbox-layouts/index.html) | `HTML & CSS` | `Beginner` | [Commit](https://github.com/divya8050/html-css/commit/953e789d226c6867196841ffa2bbf10d6107c92d) |
 | 2026-11-12 | [Building a Responsive Hero Section](html-css-mastery/03-responsive-design/day-46-responsive-hero-section/index.html) | `HTML & CSS` | `Beginner` | [Commit](https://github.com/divya8050/html-css/commit/6c843448d1184647f3e51ed876f8a54950fc268f) |
 | 2026-11-11 | [Flexbox Card Layout](html-css-mastery/02-flexbox-grid/day-45-flexbox-card-layout/index.html) | `HTML & CSS` | `Beginner` | [Commit](https://github.com/divya8050/html-css/commit/7d447556c03e26ee0dda9169e3ec07c41f670937) |
