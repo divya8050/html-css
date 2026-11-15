@@ -1,0 +1,205 @@
+/* CSS Variables */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --bg-light: #f8f9fa;
+    --bg-dark: #343a40;
+    --text-light: #f8f9fa;
+    --text-dark: #212529;
+    --border-color: #dee2e6;
+    --header-height: 60px;
+    --sidebar-width: 250px;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --card-bg: #ffffff;
+    --card-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Base Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Dashboard Layout */
+.dashboard-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure layout takes full viewport height */
+}
+
+/* Header */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 var(--spacing-lg);
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    height: var(--header-height);
+    box-shadow: var(--card-shadow);
+}
+
+.dashboard-logo {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.main-nav a {
+    color: var(--text-light);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.main-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Content Wrapper (Sidebar + Main) */
+.dashboard-content-wrapper {
+    display: flex;
+    flex: 1; /* Allow this section to grow and take available space */
+}
+
+/* Sidebar */
+.dashboard-sidebar {
+    width: var(--sidebar-width);
+    background-color: var(--card-bg);
+    border-right: 1px solid var(--border-color);
+    padding-top: var(--spacing-lg);
+    flex-shrink: 0; /* Prevent sidebar from shrinking */
+    box-shadow: var(--card-shadow);
+}
+
+.sidebar-nav ul li a {
+    display: block;
+    padding: var(--spacing-md) var(--spacing-lg);
+    color: var(--text-dark);
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-nav ul li a:hover,
+.sidebar-nav ul li a.active {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+/* Main Content Area */
+.dashboard-main {
+    flex: 1; /* Allow main content to grow and fill remaining space */
+    padding: var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.main-section {
+    background-color: var(--card-bg);
+    padding: var(--spacing-lg);
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+}
+
+/* Activity Cards */
+.activity-cards {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap */
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}
+
+.activity-cards .card {
+    flex: 1; /* Allow cards to grow and shrink */
+    min-width: 280px; /* Minimum width for cards before wrapping */
+    border: 1px solid var(--border-color);
+    padding: var(--spacing-md);
+    border-radius: 5px;
+    background-color: var(--bg-light);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.activity-cards .card h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.activity-cards .card p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.card-tag {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    align-self: flex-start; /* Align tag to the start of the card */
+}
+
+/* Stats Grid */
+.stats-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}
+
+.stat-card {
+    flex: 1;
+    min-width: 200px; /* Minimum width for stat cards */
+    background-color: var(--bg-light);
+    border: 1px solid var(--border-color);
+    padding: var(--spacing-md);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.stat-card h3 {
+    margin-top: 0;
+    color: var(--secondary-color);
+    font-size: 1rem;
+}
+
+.stat-card p {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+/* Footer */
+.dashboard-footer {
+    padding: var(--spacing-md) var(--spacing-lg);
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    text-align: center;
+    font-size: 0.9rem;
+    flex-shrink: 0; /* Prevent footer from shrinking */
+}
