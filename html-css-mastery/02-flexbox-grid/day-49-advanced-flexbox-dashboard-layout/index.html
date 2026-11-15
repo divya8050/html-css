@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Dashboard Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-layout">
+        <header class="dashboard-header">
+            <h1 class="dashboard-logo">FlexDash</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Reports</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="dashboard-content-wrapper">
+            <aside class="dashboard-sidebar">
+                <nav class="sidebar-nav">
+                    <ul>
+                        <li><a href="#" class="active">Overview</a></li>
+                        <li><a href="#">Analytics</a></li>
+                        <li><a href="#">Users</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <main class="dashboard-main">
+                <section class="main-section activity-feed">
+                    <h2>Recent Activity</h2>
+                    <div class="activity-cards">
+                        <div class="card">
+                            <h3>New Order</h3>
+                            <p>#1001 placed by Jane Doe.</p>
+                            <span class="card-tag">Processing</span>
+                        </div>
+                        <div class="card">
+                            <h3>User Registered</h3>
+                            <p>John Smith joined the platform.</p>
+                            <span class="card-tag">New User</span>
+                        </div>
+                        <div class="card">
+                            <h3>Product Update</h3>
+                            <p>Item "Super Widget" updated.</p>
+                            <span class="card-tag">Inventory</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="main-section stats-overview">
+                    <h2>Key Statistics</h2>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <h3>Total Sales</h3>
+                            <p>$12,345</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>New Users</h3>
+                            <p>42</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Page Views</h3>
+                            <p>1,234</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Active Projects</h3>
+                            <p>7</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <footer class="dashboard-footer">
+            <p>&copy; 2026 FlexDash. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
