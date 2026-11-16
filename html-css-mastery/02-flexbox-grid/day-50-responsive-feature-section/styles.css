@@ -1,0 +1,136 @@
+/* CSS Variables */
+:root {
+    --primary-color: #007bff;
+    --text-color-dark: #333;
+    --text-color-light: #666;
+    --bg-light: #f8f9fa;
+    --bg-white: #fff;
+    --border-color: #e9ecef;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 3rem;
+    --border-radius-md: 0.5rem;
+    --shadow-light: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+/* Basic Reset & Body Styles */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color-dark);
+    background-color: var(--bg-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Center content vertically for demo */
+    padding: var(--spacing-md);
+}
+
+/* Container for overall layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-sm);
+}
+
+/* Feature Section */
+.feature-section {
+    background-color: var(--bg-white);
+    padding: var(--spacing-lg) 0;
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-light);
+    width: 100%;
+}
+
+.feature-section__title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-lg);
+    font-weight: 700;
+}
+
+/* Feature Grid (Flexbox) */
+.feature-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to next line */
+    gap: var(--spacing-md); /* Space between cards */
+    justify-content: center; /* Center items when they don't fill a row */
+}
+
+/* Feature Card */
+.feature-card {
+    flex: 0 0 calc(25% - var(--spacing-md) * 3 / 4); /* Default 4 cards per row, accounting for gap */
+    min-width: 280px; /* Minimum width for cards before wrapping */
+    background-color: var(--bg-white);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-light);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.feature-card__icon {
+    font-size: 3.5rem;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.feature-card__heading {
+    font-size: 1.5rem;
+    color: var(--text-color-dark);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.feature-card__description {
+    font-size: 1rem;
+    color: var(--text-color-light);
+    flex-grow: 1; /* Allow description to take available space */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .feature-card {
+        flex: 0 0 calc(33.333% - var(--spacing-md) * 2 / 3); /* 3 cards per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .feature-section__title {
+        font-size: 2rem;
+    }
+    .feature-card {
+        flex: 0 0 calc(50% - var(--spacing-md) / 2); /* 2 cards per row */
+    }
+}
+
+@media (max-width: 576px) {
+    .feature-section {
+        padding: var(--spacing-md) 0;
+    }
+    .feature-section__title {
+        font-size: 1.8rem;
+        margin-bottom: var(--spacing-md);
+    }
+    .feature-card {
+        flex: 0 0 100%; /* 1 card per row */
+    }
+    body {
+        padding: var(--spacing-sm);
+    }
+}
