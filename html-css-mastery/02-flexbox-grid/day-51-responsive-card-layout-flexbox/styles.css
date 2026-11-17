@@ -1,0 +1,157 @@
+/* CSS Variables */
+:root {
+    --primary-color: #007bff;
+    --text-color: #333;
+    --background-color: #f4f7f6;
+    --card-background: #ffffff;
+    --border-color: #e0e0e0;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --gap-spacing: 20px;
+    --border-radius: 8px;
+    --padding-small: 15px;
+    --padding-medium: 20px;
+}
+
+/* Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    padding: var(--padding-medium);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Removes extra space below image */
+}
+
+/* Header */
+.page-header {
+    text-align: center;
+    margin-bottom: var(--gap-spacing);
+    padding: var(--padding-medium) 0;
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 5px var(--shadow-color);
+}
+
+.page-header h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+}
+
+/* Main Content Layout */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Card Grid */
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap-spacing); /* Spacing between cards */
+    justify-content: center; /* Center cards when not filling full row */
+}
+
+/* Individual Card */
+.card {
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px var(--shadow-color);
+    overflow: hidden; /* Ensures image corners are rounded */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex: 1 1 calc(33.333% - var(--gap-spacing)); /* Default to 3 columns */
+    max-width: calc(33.333% - var(--gap-spacing)); /* Max width for 3 columns */
+}
+
+.card__image {
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Cover the area without distortion */
+    border-bottom: 1px solid var(--border-color);
+}
+
+.card__content {
+    padding: var(--padding-medium);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Allows content to push button to bottom if needed */
+}
+
+.card__title {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.card__description {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: var(--padding-medium);
+    flex-grow: 1; /* Pushes the button to the bottom */
+}
+
+.card__button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: auto; /* Aligns button to the bottom */
+}
+
+.card__button:hover {
+    background-color: #0056b3; /* A slightly darker blue */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .card {
+        flex: 1 1 calc(50% - var(--gap-spacing)); /* 2 columns */
+        max-width: calc(50% - var(--gap-spacing));
+    }
+    .page-header h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 100%; /* 1 column */
+        max-width: 100%;
+    }
+    .page-header h1 {
+        font-size: 1.8rem;
+    }
+    body {
+        padding: var(--padding-small);
+    }
+}
+
+@media (max-width: 480px) {
+    .card__image {
+        height: 150px; /* Smaller image height on small screens */
+    }
+    .card__title {
+        font-size: 1.3rem;
+    }
+    .card__description {
+        font-size: 0.9rem;
+    }
+    .card__button {
+        padding: 8px 15px;
+    }
+}
