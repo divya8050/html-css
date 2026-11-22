@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <a href="#" class="site-logo">my brand</a>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#" class="nav-link">home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">about</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">services</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <h1>Welcome to Day 56</h1>
+        <p>Practicing responsive navigation with HTML5 and CSS3.</p>
+        <p>This navigation bar is designed to be responsive, adapting its layout for different screen sizes.</p>
+    </main>
+
+    <!-- Basic JS for toggle functionality (not part of strict CSS/HTML request but good for demo) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navToggle = document.querySelector('.nav-toggle');
+            const mainNav = document.querySelector('.main-nav');
+
+            navToggle.addEventListener('click', () => {
+                mainNav.classList.toggle('is-open');
+                navToggle.classList.toggle('is-open');
+            });
+        });
+    </script>
+</body>
+</html>
