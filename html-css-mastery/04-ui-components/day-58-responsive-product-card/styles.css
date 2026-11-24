@@ -1,0 +1,121 @@
+/* CSS variables for consistent styling */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --text-color: #343a40;
+    --background-light: #f8f9fa;
+    --border-color: #dee2e6;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --border-radius: 0.25rem;
+}
+
+/* Basic reset and body styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    margin: 0;
+    padding: var(--spacing-lg);
+    background-color: var(--background-light);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Product grid container using CSS Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid columns */
+    gap: var(--spacing-lg);
+    max-width: 1200px;
+    margin: var(--spacing-lg) auto;
+    padding: var(--spacing-md);
+}
+
+/* Individual product card styling */
+.product-card {
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    overflow: hidden; /* Ensures image corners are rounded */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    display: flex; /* Flexbox for card content layout */
+    flex-direction: column;
+    transition: transform 0.2s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card__image {
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Ensures image covers the area without distortion */
+    display: block;
+}
+
+.product-card__content {
+    padding: var(--spacing-md);
+    flex-grow: 1; /* Allows content to take available space */
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card__title {
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: var(--spacing-sm);
+    color: var(--primary-color);
+}
+
+.product-card__description {
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-md);
+    flex-grow: 1; /* Allows description to take available space */
+}
+
+.product-card__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto; /* Pushes footer to the bottom */
+    padding-top: var(--spacing-sm);
+    border-top: 1px solid var(--border-color);
+}
+
+.product-card__price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.product-card__button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease;
+}
+
+.product-card__button:hover {
+    background-color: #0056b3; /* Darker blue for hover state */
+}
+
+/* Media queries for minor adjustments */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        padding: var(--spacing-sm);
+        grid-template-columns: 1fr; /* Single column on very small screens */
+    }
+}
