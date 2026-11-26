@@ -1,0 +1,171 @@
+/* Variables */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: #f8f9fa;
+    --card-background: #ffffff;
+    --text-color: #343a40;
+    --border-color: #dee2e6;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Base styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure footer sticks to bottom */
+}
+
+/* Header */
+.page-header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+.page-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Main content - Card Grid */
+.card-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    justify-content: center; /* Center cards horizontally */
+    gap: 1.5rem; /* Space between cards */
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the grid container */
+    flex-grow: 1; /* Allow main content to grow and push footer down */
+}
+
+/* Individual Card */
+.card {
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    overflow: hidden; /* Ensures image corners are rounded */
+    display: flex;
+    flex-direction: column;
+    max-width: 350px; /* Max width for individual cards */
+    flex-basis: calc(33.333% - 1.5rem); /* Default to 3 cards per row, accounting for gap */
+    min-width: 280px; /* Minimum width before wrapping */
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card__image {
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Cover the area without distorting aspect ratio */
+    display: block; /* Remove extra space below image */
+}
+
+.card__content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Allow content to grow and push button down */
+}
+
+.card__title {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    font-size: 1.75rem;
+    color: var(--primary-color);
+}
+
+.card__description {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    flex-grow: 1; /* Allow description to grow */
+}
+
+.card__button {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+    align-self: flex-start; /* Align button to the start */
+    transition: background-color 0.2s ease;
+}
+
+.card__button:hover {
+    background-color: #0056b3; /* Darker shade for hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .card {
+        flex-basis: calc(50% - 1.5rem); /* 2 cards per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .card {
+        flex-basis: 100%; /* 1 card per row on small screens */
+        max-width: 400px; /* Limit width of single card on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .page-header {
+        padding: 1rem;
+    }
+
+    .page-header h1 {
+        font-size: 1.75rem;
+    }
+
+    .card-grid {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .card__title {
+        font-size: 1.5rem;
+    }
+
+    .card__description {
+        font-size: 0.9rem;
+    }
+
+    .card__button {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Footer */
+.page-footer {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+.page-footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
