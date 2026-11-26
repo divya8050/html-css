@@ -6,6 +6,7 @@ Personal repository for HTML5 semantics, modern CSS layout techniques, responsiv
 
 | Date | Topic / Problem | Language | Difficulty | Link |
 | :--- | :--- | :--- | :--- | :--- |
+| 2026-11-26 | [Responsive Card Layout with Flexbox](html-css-mastery/02-flexbox-grid/day-60-responsive-card-layout/index.html) | `HTML & CSS` | `Beginner` | [Commit](https://github.com/divya8050/html-css/commit/dc919e33f9e5a3f0359323e0bd15e341da8a9280) |
 | 2026-11-25 | [Responsive Card Grid with Flexbox](html-css-mastery/02-flexbox-grid/day-59-responsive-card-grid-flexbox/index.html) | `HTML & CSS` | `Beginner` | [Commit](https://github.com/divya8050/html-css/commit/f14b0779b97fa413e212462f56b413aa5b22cb2b) |
 | 2026-11-24 | [Building a Responsive Product Card Component](html-css-mastery/04-ui-components/day-58-responsive-product-card/index.html) | `HTML & CSS` | `Beginner` | [Commit](https://github.com/divya8050/html-css/commit/85ed79c70d578abf7d11267bf4d2d636578b15f3) |
 | 2026-11-23 | [Building a Responsive Product Card Component](html-css-mastery/04-ui-components/day-57-responsive-product-card-component/index.html) | `HTML & CSS` | `Beginner` | [Commit](https://github.com/divya8050/html-css/commit/306895882ea2e2725351ed8efe2fdc6951e24c55) |
